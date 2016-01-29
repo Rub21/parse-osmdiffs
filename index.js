@@ -20,7 +20,8 @@ var opts = {
 };
 
 function init() {
-  fetch(number, save);
+  console.log('num :' + number);
+  fetch(number, opts[argv.type].url, save);
 }
 
 function save(obj) {
