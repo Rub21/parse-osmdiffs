@@ -1,0 +1,7 @@
+# Some Files #
+###################
+*.json
+*.gz
+*.geojson
+*.osc
+*.osm
