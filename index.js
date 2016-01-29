@@ -1,9 +1,8 @@
 'use strict';
 var argv = require('optimist').argv;
-var download = require('./src/download');
+var fetch = require('./src/fetch');
 var fs = require('fs');
 var result = [];
-//inicio
 var opts = {
   m: {
     num: 1,
@@ -21,7 +20,7 @@ var opts = {
 };
 
 function init() {
-  download(number, save);
+  fetch(number, save);
 }
 
 function save(obj) {
