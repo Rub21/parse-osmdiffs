@@ -14,7 +14,7 @@ module.exports = function(minuteStartNumber, url, done) {
 			var v = body.split('\n');
 			var obj = {};
 			obj.sequenceNumber = parseInt(v[1].split('=')[1]);
-			obj.date = v[2].split('=')[1].replace(/[\\\\/]+/g, '');
+			obj.date = v[4].split('=')[1].replace(/[\\\\/]+/g, '');
 			done(obj);
 		} else {
 			console.log('No file found url:' + url);

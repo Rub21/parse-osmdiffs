@@ -26,6 +26,7 @@ function init() {
 
 function save(obj) {
   if (obj) {
+    console.log(obj);
     result.push(obj);
     number++;
     init();
